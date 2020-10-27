@@ -175,6 +175,7 @@ target_link_libraries(h3mm
         ${GDAL_LIBRARIES}
         ${OpenMP_CXX_LIBRARIES})
 
+add_dependencies(h3mm CONFIG UTIL ALGORITHM IO CORE)
 add_subdirectory(python)
 add_subdirectory(test EXCLUDE_FROM_ALL)
 
